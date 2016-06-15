@@ -1,0 +1,61 @@
+#%RAML 1.0 
+title: FramApp
+version: 1
+baseUri: https://project-5613440220430148247.firebaseio.com/api/v1/
+
+types:
+  Category:
+    properties:
+      title: string
+  Product:
+    properties:
+      guid:
+      promoted: boolean
+      title:
+      category:
+      price:
+      imageUrl:
+      amount: number
+      description:
+ 
+/categories.json:
+  get:
+    responses:
+      200:
+        body:
+          type: object
+  post:
+    description: Add category
+    body:
+      type: Category
+  
+/categories/{categoryId}.json:
+    get:
+      responses:
+        200:
+          body:
+            type: Category
+    put:
+      description: Edit category
+
+/products.json:
+  get:
+    responses:
+      200:
+        body:
+          type: object
+  post:
+    description: Add product
+    body:
+      type: Product
+  
+/products/{productId}.json:
+    get:
+      responses:
+        200:
+          body:
+            type: Product
+    put:
+      description: Edit product
+      body:
+        type: Product

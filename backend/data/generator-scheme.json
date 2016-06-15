@@ -1,0 +1,31 @@
+{
+  "api" : {
+    "v1" : {
+      "categories" : {
+          "phones": {
+              "title": "Phones"
+          },
+          "notebooks": {
+              "title": "Notebooks"
+          },
+          "televisions": {
+              "title": "Televisions"
+          }
+      },
+      "products" : [
+          {
+            'repeat(100, 100)': {
+              guid: '{{guid()}}',
+              promoted: '{{bool()}}',
+              title: '{{company()}}',
+              category: '{{random("phones", "notebooks", "televisions")}}',
+              price: '{{floating(1000, 4000, 2)}}',
+              imageUrl: 'https://placeholdit.imgix.net/~text?txtsize=33&w=200&h=200&txt={{company()}}',
+              amount: '{{integer(0, 1000)}}',
+              description: '{{lorem(1, "paragraphs")}}'
+            }
+          }
+        ]
+     }
+  }
+}

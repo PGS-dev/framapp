@@ -1,0 +1,13 @@
+##Database
+Firebase app: https://project-5613440220430148247.firebaseio.com/ 
+  
+Documentation about using Firebase with REST api:   
+https://firebase.google.com/docs/reference/rest/database/
+  
+Example GET request for getting categories:  
+https://project-5613440220430148247.firebaseio.com/api/v1/categories.json
+
+
+##Sample Data
+Data generated with json-generator.com you can find in `data` directory
+http://beta.json-generator.com/NkxlKc9V-
