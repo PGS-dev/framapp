@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FramApp Template</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="AppContainer container-fluid">
+      <div class="row">
+        <div class="col-xs">
+          <header class="AppHeader navbar navbar-full navbar-light bg-faded"><a href="#"><img src="https://www.pgs-soft.com/wp-content/themes/pgstemplate/img/header/pgs-logo-dark.png" alt="Logo" class="AppHeader-logoImage"/></a>
+            <ul class="nav nav-pills pull-xs-right">
+              <li class="nav-item"><a href="#" class="nav-link">Hello Admin!</a></li>
+            </ul>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-lg-2">
+          <nav class="AppNavigation">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="/admin-categories.html">Categories</a></li>
+              <li class="list-group-item"><a href="/admin-products.html">Products</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9 col-lg-10">
+          <main class="AppMain">
+            <div class="AdminForm">
+              <form>
+                <fieldset class="form-group">
+                  <label>Title</label>
+                  <input type="text" placeholder="Title" class="form-control"/>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label>Category</label>
+                  <select placeholder="Choose category" class="form-control">
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                  </select>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label>Description</label>
+                  <textarea placeholder="Product description" class="form-control"></textarea>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label>Image URL</label>
+                  <input type="text" placeholder="Image URL" class="form-control"/>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label>Price</label>
+                  <input type="text" placeholder="0.00" class="form-control"/>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label>Amount</label>
+                  <input type="number" placeholder="0" class="form-control"/>
+                </fieldset>
+                <fieldset class="form-group">
+                  <label>
+                    <input type="checkbox"/><span>Is promoted</span>
+                  </label>
+                </fieldset>
+                <div class="AdminForm-buttons"><a href="admin-products.html" class="btn btn-primary">Save</a></div>
+              </form>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

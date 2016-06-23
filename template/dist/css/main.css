@@ -1,0 +1,50 @@
+HTML,
+BODY {
+  height: 100%; }
+
+BODY {
+  background-image: linear-gradient(to right bottom, #ED6415 0%, #FF9B30 100%); }
+
+.AppHeader {
+  margin-bottom: 30px; }
+  .AppHeader IMG {
+    height: 40px; }
+  .AppHeader A {
+    color: #F06C19; }
+    .AppHeader A:hover {
+      color: #F06C19;
+      text-decoration: underline; }
+
+.AppNavigation {
+  margin-bottom: 30px; }
+  .AppNavigation .list-group-item:first-child, .AppNavigation .list-group-item:last-child {
+    border-radius: 0; }
+  .AppNavigation A {
+    color: #F06C19; }
+    .AppNavigation A:hover {
+      color: #F06C19; }
+
+.ProductCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.ProductCard {
+  width: 200px;
+  background: #fff;
+  display: inline-block;
+  margin: 10px; }
+  .ProductCard IMG {
+    width: 200px;
+    height: 200px;
+    background: #F7F7F9; }
+  .ProductCard P {
+    padding: 10px; }
+
+/* ADMIN */
+.AdminTable {
+  background: #fff; }
+
+.AdminForm {
+  background: #fff;
+  padding: 30px; }
