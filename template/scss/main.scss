@@ -1,0 +1,81 @@
+$linkColor: #F06C19;
+
+
+
+HTML,
+BODY {
+  height: 100%;
+}
+
+BODY {
+  background-image: linear-gradient(to right bottom, #ED6415 0%, #FF9B30 100%);
+}
+
+
+.AppHeader {
+  margin-bottom: 30px;
+
+  IMG {
+    height: 40px;
+  }
+
+  A {
+    color: $linkColor;
+    &:hover {
+      color: $linkColor;
+      text-decoration: underline;
+    }
+  }
+}
+
+.AppNavigation {
+  margin-bottom: 30px;
+
+  .list-group-item {
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+  }
+
+  A {
+    color: $linkColor;
+    &:hover {
+      color: $linkColor;
+    }
+  }
+}
+
+.ProductCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ProductCard {
+  width: 200px;
+  background: #fff;
+  display: inline-block;
+  margin: 10px;
+
+  IMG {
+    width: 200px;
+    height: 200px;
+    background: #F7F7F9;
+  }
+
+  P {
+    padding: 10px;
+  }
+}
+
+
+/* ADMIN */
+.AdminTable {
+  background: #fff;
+}
+
+.AdminForm {
+  background: #fff;
+  padding: 30px;
+}

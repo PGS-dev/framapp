@@ -1,0 +1,23 @@
+include partials/mixins
+
+doctype html
+html(lang="en")
+    include partials/head
+
+    body
+        .AppContainer.container-fluid
+            .row
+                .col-xs
+                    +AppAdminHeader()
+            .row
+                .col-md-3.col-lg-2
+                    +AppAdminNavigation(['Categories', 'Products'])
+                .col-md-9.col-lg-10
+                    main.AppMain
+                        .AdminForm
+                            form
+                                +FormInput("text", "Title", "Title")
+
+                                .AdminForm-buttons
+                                    a(href="admin-categories.html").btn.btn-primary Save
+

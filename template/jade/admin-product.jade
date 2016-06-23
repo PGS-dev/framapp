@@ -1,0 +1,29 @@
+include partials/mixins
+
+doctype html
+html(lang="en")
+    include partials/head
+
+    body
+        .AppContainer.container-fluid
+            .row
+                .col-xs
+                    +AppAdminHeader()
+            .row
+                .col-md-3.col-lg-2
+                    +AppAdminNavigation(['Categories', 'Products'])
+                .col-md-9.col-lg-10
+                    main.AppMain
+                        .AdminForm
+                            form
+                                +FormInput("text", "Title", "Title")
+                                +FormSelect("Category", "Choose category", ["Category 1", "Category 2"])
+                                +FormTextarea("Description", "Product description")
+                                +FormInput("text", "Image URL", "Image URL")
+                                +FormInput("text", "Price", "0.00")
+                                +FormInput("number", "Amount", "0")
+                                +FormCheckbox("checkbox", "Is promoted")
+
+                                .AdminForm-buttons
+                                    a(href="admin-products.html").btn.btn-primary Save
+

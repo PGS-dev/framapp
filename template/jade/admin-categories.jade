@@ -1,0 +1,27 @@
+include partials/mixins
+
+doctype html
+html(lang="en")
+    include partials/head
+
+    body
+        .AppContainer.container-fluid
+            .row
+                .col-xs
+                    +AppAdminHeader()
+            .row
+                .col-md-3.col-lg-2
+                    +AppAdminNavigation(['Categories', 'Products'])
+                .col-md-9.col-lg-10
+                    main.AppMain
+                        .AdminTable.table-responsive
+                            table.table
+                                thead
+                                    th ID
+                                    th Name
+                                    th Action
+                                tbody
+                                    td category-1
+                                    td category-2
+                                    td
+                                        a(href="admin-category.html").btn Edit

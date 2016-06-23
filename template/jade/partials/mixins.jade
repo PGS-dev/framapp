@@ -1,0 +1,59 @@
+mixin AppNavigation(links)
+    nav.AppNavigation
+        ul.list-group
+            each link in links
+                li.list-group-item
+                    a(href='/#')= 'Category ' + link
+
+mixin AppAdminNavigation(links)
+    nav.AppNavigation
+        ul.list-group
+            li.list-group-item
+                a(href='/admin-categories.html') Categories
+            li.list-group-item
+                a(href='/admin-products.html') Products
+
+
+mixin ProductCard(title)
+    article.ProductCard
+        img(src="http://loremflickr.com/200/200?random" + title, alt="Product image").ProductCard-image
+        p.card-text= title
+
+
+mixin AppHeader()
+    header.AppHeader.navbar.navbar-full.navbar-light.bg-faded
+        a(href='#')
+            img(src="https://www.pgs-soft.com/wp-content/themes/pgstemplate/img/header/pgs-logo-dark.png", alt="Logo").AppHeader-logoImage
+
+mixin AppAdminHeader()
+    header.AppHeader.navbar.navbar-full.navbar-light.bg-faded
+        a(href='#')
+            img(src="https://www.pgs-soft.com/wp-content/themes/pgstemplate/img/header/pgs-logo-dark.png", alt="Logo").AppHeader-logoImage
+        ul.nav.nav-pills.pull-xs-right
+            li.nav-item
+                a(href="#").nav-link Hello Admin!
+
+
+mixin FormInput(type, label, placeholder)
+    fieldset.form-group
+        label=label
+        input(type=type, class="form-control", placeholder=placeholder)
+
+mixin FormCheckbox(type, label)
+    fieldset.form-group
+        label
+            input(type=type)
+            span=label
+
+mixin FormSelect(label, placeholder, options)
+    fieldset.form-group
+        label=label
+        select(class="form-control", placeholder=placeholder)
+            each option in options
+                option=option
+
+
+mixin FormTextarea(label, placeholder)
+    fieldset.form-group
+        label=label
+        textarea(class="form-control", placeholder=placeholder)

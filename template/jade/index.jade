@@ -1,0 +1,20 @@
+include partials/mixins
+
+
+doctype html
+html(lang="en")
+    include partials/head
+
+    body
+        .AppContainer.container-fluid
+            .row
+                .col-xs
+                    +AppHeader()
+            .row
+                .col-md-3.col-lg-2
+                    +AppNavigation(['A', 'B', 'C'])
+                .col-md-9.col-lg-10
+                    main.AppMain
+                        section.row.ProductCards
+                                each title in ['First Product', 'Second Product', 'Another Product', '4th Product with little bit longer name', 'Next product', 'Yet another one!']
+                                    +ProductCard(title)
