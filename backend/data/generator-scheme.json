@@ -15,12 +15,12 @@
       "products" : [
           {
             'repeat(100, 100)': {
-              guid: '{{guid()}}',
+              id: '{{index()}}',
               promoted: '{{bool()}}',
               title: '{{company()}}',
               category: '{{random("phones", "notebooks", "televisions")}}',
               price: '{{floating(1000, 4000, 2)}}',
-              imageUrl: 'https://placeholdit.imgix.net/~text?txtsize=33&w=200&h=200&txt={{company()}}',
+              imageUrl: 'https://unsplash.it/320/180/?random&id={{index()}}',
               amount: '{{integer(0, 1000)}}',
               description: '{{lorem(1, "paragraphs")}}'
             }
